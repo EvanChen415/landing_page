@@ -51,9 +51,10 @@ body {
 }
 
 .headerLogo {
-  font-weight: 700;
+  font-weight: bold;
   padding-left: 50px;
   font-size: x-large;
+  color: #471f26;
 }
 
 .links {
@@ -62,29 +63,56 @@ body {
   padding-right: 50px;
   gap: 24px;
   font-weight: 500;
+  align-items: center;
 }
 
-.section1 {
-  display: flex;
-  justify-content: space-between;
+.linkButton {
+  background-color: ;
+  border: #471f26 solid 2px;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
-.section1Text {
+.section1 .Text {
   width: 500px;
   height: 280px;
-  border: #76323f solid 1px;
+  border: rgb(125, 54, 67, 0.3) solid 5px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.section1Container {
+  display: flex;
+  border: #76323f solid 5px;
+  border-radius: 25px;
+}
+.section1 .Text2 {
+  width: 500px;
+  height: 280px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 60px;
 }
 
 .section1Header1 {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #76323f;
+  color: #471f26;
 }
 
 .section1Header2 {
   color: #76323f;
   margin-bottom: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 .section1Header4 {
   margin-bottom: 30px;
@@ -110,13 +138,24 @@ body {
   border: #666600 solid 5px;
 }
 
-.section2Header {
+.section2Header1 {
   color: #76323f;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 30px;
   font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.section2Header2 {
+  font-size: 50px;
+}
+
+.section2Container {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 .box1Container {
@@ -138,8 +177,15 @@ body {
   /* original dimensions: width: 792px, height: 448.266 */
   width: 396px;
   height: 224.133px;
+  margin-bottom: 50px;
 }
 
+.section2Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .section2BoxImg {
   /* This will set the size of the image so it fits in the box.  */
   width: 100px;
@@ -173,22 +219,51 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.section3Header3 {
+.section3Quotes {
+  display: flex;
+}
+
+.section3Header {
+  margin-right: 50px;
+  color: #76323f;
+  font-size: 50px;
+}
+.quote {
   max-width: 70%;
   font-size: 20px;
   font-weight: lighter;
   font-style: italic;
-  color: green;
+  color: #76323f;
 }
 
-.section3Header4 {
-  max-width: 70%;
+.quote.one {
+  height: 50px;
+  width: 200px;
+  margin-right: 50px;
+}
+
+.quote1Text {
+  margin-bottom: 10px;
+}
+.quote.author1 {
+  margin-right: 20px;
+}
+.quote.two {
+  height: 50px;
+  width: 300px;
+  margin-right: 40px;
+}
+.quote2Text {
+  margin-bottom: 10px;
+}
+.quote.author1,
+.quote.author2 {
   margin-left: auto;
-  margin-right: 30%;
-  color: blue;
+  color: #471f26;
+  display: flex;
+  justify-content: right;
 }
 
 .section4Box {
