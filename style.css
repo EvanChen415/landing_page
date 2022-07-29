@@ -39,6 +39,12 @@ body {
   min-height: 22.5%;
 }
 
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section1 {
   padding-top: 3%;
   width: 75%;
@@ -120,12 +126,14 @@ body {
 }
 
 .section1Button {
+  cursor: pointer;
+
   width: 150px;
   height: 50px;
-  background-color: #f2f3f5;
-  color: black;
+  background-color: #76323f;
+  color: white;
   border-radius: 10px;
-  border: #666600 solid 3px;
+  border: black solid 3px;
   transition: 2s;
   font-size: 20px;
 }
@@ -133,9 +141,9 @@ body {
 .section1Button:hover {
   width: 250px;
   height: 80px;
-  cursor: pointer;
   background-color: #c09f80;
-  border: #666600 solid 5px;
+  color: black;
+  border: black solid 5px;
 }
 
 .section2Header1 {
@@ -267,21 +275,24 @@ h5 {
 }
 
 .section4Box {
-  width: 50%;
+  width: 700px;
   min-height: 100px;
-  border: 1px solid green;
+  border: 3px solid #76323f;
   border-radius: 30px;
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
   flex-direction: row;
-  background-color: lightskyblue;
-  justify-content: space-around;
+  background-color: #d7cec7;
+  justify-content: space-between;
   align-items: center;
 }
 
+.section4Button {
+  margin-right: 30px;
+}
 .section4Header4 {
-  font-size: 20px;
+  color: #471f26;
+  text-align: center;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -289,11 +300,12 @@ h5 {
   height: 50px;
   width: 200px;
   border-radius: 10px;
-  background-color: white;
-  border: solid white;
+  background-color: #76323f;
+  color: white;
+  border: solid black;
 }
 
 .section4Button:hover {
   cursor: pointer;
-  background-color: lightblue;
+  background-color: #943a49;
 }
